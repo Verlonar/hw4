@@ -38,18 +38,18 @@ public class Main {
     public static void task2() {
         int i = 7;
 
-        while (i < 31) {
+        for (; i < 31; i += 7) {
             if (i % 7 == 0) {
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
             }
-            i++;
         }
     }
 
     public static void task3() {
         int start = 0;
-        int observationFrom = 1822;
-        int observationTo = 2122;
+        int currentYear = 2022;
+        int observationFrom = currentYear - 200;
+        int observationTo = currentYear + 100;
 
         for (; start <= observationTo; start += 79) {
             if (start >= observationFrom) {
